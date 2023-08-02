@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(209, 179, 237);
+}
+
+.form {
+    padding: 10px;
+    display: flex;
+    justify-items: center;
+    justify-content: end;
+    margin: 10%;
+}
+
+.text {
+    left: 50%;
+    font-size: 14px;
+    padding: 10px 15px;
+    border: solid 1px rgb(209, 179, 237);
+}
