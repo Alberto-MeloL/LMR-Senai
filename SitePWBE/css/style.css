@@ -1,0 +1,7 @@
+body {
+    background-color: rgb(209, 179, 237);
+}
+.carousel img {
+    max-width: 700px;
+    max-height: 600px;
+}
