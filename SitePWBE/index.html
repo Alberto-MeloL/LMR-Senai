@@ -1,66 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PeçoSeu</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PeçoSeu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <nav class="navbar bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="img/logoSite.png" alt="Logo" width="35" height="30" class="d-inline-block align-text-top">
-        PeçoSeu
-      </a>
-    </nav>
-        </div>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="descontos.html">Your discounts</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="produtos.html">Products</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="suporte.html">contact us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Instagram: @Productstop</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-      
-      <nav class="carousel">
-        <div id="carouselExample" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/estatua.jpg" class="d-block w-100" alt="">
-            </div>
-            <div class="carousel-item">
-              <img src="img/oculos.jpg" class="d-block w-100" alt="">
-            </div>
-            <div class="carousel-item">
-              <img src="img/perfume.jpg" class="d-block w-100" alt="">
-            </div>
+  <header>
+    <img src="img/logoSite.png" alt="logo">
+    <div class="menu1">
+      <a href="index.html" class="linkMenu">Home</a>
+      <a href="produtos.html" class="linkMenu">Products</a>
+      <a href="suporte.html" class="linkMenu">Contacct us</a>
+      <a href="descontos.html" class="linkMenu">Your discounts</a>
+
+    </div>
+    <img src="img/menu.png" alt="hamburguer" class="hb">
+    <div class="menuHB">
+      <ul>
+        <li><a href="index.html" class="linkMenu">Home</a></li>
+        <li><a href="produtos.html" class="linkMenu">Products</a></li>
+        <li><a href="suporte.html" class="linkMenu">Contact us</a></li>
+        <li><a href="descontos.html" class="linkMenu">Your discounts</a></li>
+      </ul>
+    </div>
+  </header>
+  <section>
+    <div class="container">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/estatua.jpg" class="d-block w-100" alt="...">
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="carousel-item">
+            <img src="img/oculos.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/perfume.jpg" class="d-block w-100" alt="...">
+          </div>
         </div>
-      </nav>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="section01">
+    <div class="card-group">
+      <div class="card">
+        <img src="img/oculos.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/perfume.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/estatua.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <a href="">Instagram</a>
+  </footer>
 </body>
-<script type=#carouselExample src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js">
-</script></html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</html>
