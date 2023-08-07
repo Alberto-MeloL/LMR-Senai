@@ -10,6 +10,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0px 5px 20px rgb(119, 116, 116);
 }
 
 header img {
