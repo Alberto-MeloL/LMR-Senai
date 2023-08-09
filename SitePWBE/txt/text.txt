@@ -74,3 +74,5 @@ rascunho:
               </div>
             </div>
           </nav>
+           flex-direction: column;
+    flex-direction: ;
