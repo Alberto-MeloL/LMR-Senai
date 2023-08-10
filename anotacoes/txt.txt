@@ -1,3 +1,6 @@
 fazer validações login/cadastro
 fazer menu hamburguer no css
 melhorrar o meu footer
+fazer agradecimentos
+abrir e facha de menus
+menus top
