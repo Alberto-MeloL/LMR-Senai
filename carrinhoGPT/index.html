@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Carrinho de Compras</title>
+</head>
+<body>
+    <div class="product-card" data-name="Produto 1" data-price="1100" data-image="img/teste.jpg">
+        <p>Preço: $10.00</p>
+        <img src="img/teste.jpg" alt="Produto 1">
+        <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+    </div>
+    <div class="product-card" data-name="Produto 2" data-price="20" data-image="produto2.jpg">
+        <h2>Produto 2</h2>
+        <p>Preço: $20.00</p>
+        <img src="produto2.jpg" alt="Produto 2">
+        <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="cart">
+        <h1>Carrinho de Compras</h1>
+        <ul class="cart-items" id="cart-items">
+            <!-- Itens serão adicionados aqui via JavaScript -->
+        </ul>
+        <div class="cart-total">
+            <span>Total:</span>
+            <span class="total-price" id="total-price">$0.00</span>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

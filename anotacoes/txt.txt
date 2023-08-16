@@ -6,3 +6,5 @@ abrir e facha de menus
 menus top
 
 teste validação
+https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/replace
