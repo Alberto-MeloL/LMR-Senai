@@ -1,0 +1,108 @@
+body{
+    background-color: #276baa;
+    display: flex;
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0px 5px 20px rgb(51, 51, 51);
+    text-decoration: none;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+}
+header img{
+   height: 7vh;
+}
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #276baa;
+}
+
+.menu {
+  background: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+
+.hamburguer {
+  position: relative;
+  display: block;
+  background: #000;
+  width: 30px;
+  height: 2px;
+  top: 29px;
+  left: 15px;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+  background: #000;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before {
+  top: -10px;
+}
+
+.hamburguer:after {
+  bottom: -10px;
+}
+
+input {
+  display: none;
+}
+input:checked ~ ul{
+    opacity: 1;
+}
+input:checked ~ label .menu{
+    box-shadow: 0 0 0 130vw #fff, 0 0 0 130vw #fff;
+}
+input:checked ~ label .hamburguer {
+  transform: rotate(45deg);
+}
+
+input:checked ~ label .hamburguer:before {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+input:checked ~ label .hamburguer:after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    opacity: 0;
+}
+a{
+    display: block;
+    margin-bottom: 40px;
+    color: #276baa;
+    font-size: 47px;
+    text-decoration: n;
+}
