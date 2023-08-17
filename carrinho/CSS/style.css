@@ -6,7 +6,11 @@ header h3 {
     align-items: center;
     justify-content: center;
 }
-
+button{
+	border-radius: 40%;
+	border-color: #006CB5;
+	background-color: #aaa;
+}
 body {
 	margin: 0;
 	

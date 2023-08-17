@@ -8,3 +8,4 @@ menus top
 teste validação
 https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input
 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+https://pt.stackoverflow.com/questions/169013/js-exibir-elementos-na-tela-a-partir-de-um-objeto
