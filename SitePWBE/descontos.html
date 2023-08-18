@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Descontos</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
-    <script>
+   <link rel="stylesheet" href="css/style.css">
+   <script>
         function resgatarCupom(){
             alert('Resgatado ✅\nCódigo do cupom: CPM002 \nAconselhamos que anote este código, para usá-lo mais tarde.')
         }
@@ -14,14 +15,43 @@
         body{
             background-color: rgb(209, 179, 237);
         }
+        .card img {
+            height: 300px;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <img src="img/logoSite.png" alt="logo">
+        <div class="menu1">
+          <a href="index.html" class="linkMenu">Home</a>
+          <a href="produtos.html" class="linkMenu">Products</a>
+          <a href="suporte.html" class="linkMenu">Contact us</a>
+          <a href="descontos.html" class="linkMenu">Your discounts</a>
+    
+        </div>
+        <img src="img/menu.png" alt="hamburguer" class="hb">
+        <div class="menuHB">
+          <ul>
+            <li><a href="index.html" class="linkMenu">Home</a></li>
+            <li><a href="produtos.html" class="linkMenu">Products</a></li>
+            <li><a href="suporte.html" class="linkMenu">Contact us</a></li>
+            <li><a href="descontos.html" class="linkMenu">Your discounts</a></li>
+          </ul>
+        </div>
+      </header>
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
         <strong>hello ! </strong>Your discounts last 24 hours after redemption.
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
-
+    <div class="card">
+        <img src="img/descontos.jpg" class="card-img-top" alt="desconto">
+        <div class="card-body">
+          <h5 class="card-title">20% off</h5>
+          <p class="card-text">Rescue and enjoy!</p>
+          <hr>
+          
       <button class="btn btn-primary", onclick="resgatarCupom();">Rescue</button>
 </body>
+<script src="js/script.js"></script>
 </html>

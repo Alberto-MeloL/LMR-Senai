@@ -1,0 +1,3 @@
+https://www.webvalle.com.br/blog/css-fundo-transparente-sem-afetar-elementos/
+react
+jquery
