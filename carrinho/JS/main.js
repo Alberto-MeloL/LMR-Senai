@@ -1,15 +1,33 @@
 const cartItems = document.getElementById('cart-items');
 const totalPriceElement = document.getElementById('total-price');
 const addToCartButtons = document.querySelectorAll('.add-to-cart-button');
+const counterElement = document.getElementById('counter');
+const incrementButton = document.getElementById('incrementButton');
+const decrementButton = document.getElementById('decrementButton');
 
 let cart = [];
 let total = 0;
 let quantidade = 0;
+let counterValue = 0;
 
-count++;
-function Quantidade() {
-	
+function updateCounter() {
+    counterElement.textContent = counterValue;
 }
+
+incrementButton.addEventListener('click', () => {
+    counterValue++;
+    updateCounter();
+});
+
+decrementButton.addEventListener('click', () => {
+    if (counterValue > 0) {
+        counterValue--;
+        updateCounter();
+    }
+});
+
+updateCounter(); // Inicialização do contador na página
+
 
 function renderCart() {
     cartItems.innerHTML = '';
