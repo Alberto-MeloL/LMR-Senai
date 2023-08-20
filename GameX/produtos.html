@@ -1,20 +1,52 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameX</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameX</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
-      <img src="img/logo.png" alt="logoSite"> 
-      <div class="menu1">
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-      </div>
-    </header>
+  <header>
+    <a href="index.html"><img src="img/logo.png" alt="logoMarca"></a>
+    <div class="menuPadrao">
+      <a href="carrinhoCompras.html"><img src="img/carrinho.png" alt="carrinho"></a>
+      <a href="login.html" class="linkMenu">Login</a>
+      <a href="cadastro.html" class="linkMenu">Cadastro</a>
+      <a href="produtos.html" class="linkMenu">Produtos</a>
+    </div>
+    <div class="menuHamburguer">
+      <ul>
+        <li><a href="login.html" class="linkMenu">Login</a></li>
+        <li><a href="cadastro.html" class="linkMenu">Cadastro</a></li>
+        <li><a href="produtos.html" class="linkMenu">Produtos</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="product-card" data-name="Placa de Video" data-price="1100" data-image="img/placaVideo.jpg">
+    <p>Preço: $1100.00</p>
+    <img src="img/placaVideo.jpg" alt="Produto 1">
+    <button class="add-to-cart-button" onclick="addToCart(name, price, image)">Adicionar ao Carrinho</button>
+</div>
+
+  <div class="card" data-name="Placa de Video" data-price="1499.99" data-image="img/placaVideo">
+    <img src="img/placaVideo.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Placa De Video</h5>
+      <p class="card-text">Placa de Vídeo RX 6600 CLD 8G ASRock AMD Radeon,
+        8GB, GDDR6 - 90-GA2RZZ-00UANF.</p>
+        <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+    </div>
+  </div>
+
+  <footer>
+    <a href="https://www.instagram.com/"><img src="img/socialmedia.png" alt="logo"></a>
+    <a href="https://www.facebook.com/"><img src="img/socialmedia2.png" alt="logo"></a>
+  </footer>
 </body>
-<script src="js/main.js"></script>
+<script src="js/carrinhoComp.js"></script>
+
 </html>
