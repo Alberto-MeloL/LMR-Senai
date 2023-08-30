@@ -1,0 +1,34 @@
+body{
+    width: 100%;
+    height: 200vh;
+    background-color: #fff;
+    display: flex;
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: #000000dd;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+}
+header a{
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    
+}
+footer{
+background-color: #000000dd;
+   width: 100%;
+   height: 10vh; 
+   bottom: 0;
+   position: fixed;
+}
+.menuPrincipal{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
