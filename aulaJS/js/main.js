@@ -1,4 +1,5 @@
-let name;
-window.alert('Essa pagina diz');
-window.confirm('Você programa em JavaScript');
-name = window.prompt('Legal né?');
+var nome = window.prompt('Qual é o seu nome?')
+function newName() {
+    currentName = window.document.getElementById('footerName')
+    currentName.innerText += `Olá ${nome}`
+}

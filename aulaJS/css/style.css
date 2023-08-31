@@ -1,8 +1,22 @@
 body{
-    background-color:  green;
-    color: #fff;
-    font: normal 25pt Arial;
+    background: #276baa;
+    font: normal 15pt Arial;
 }
-h1{
-    color: #000;
+header{
+    color: #fff;
+    text-align: center;
+}
+section{
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px #000;
+}
+footer{
+    color: #fff;
+    text-align: center;
+    font-style: italic;
 }
