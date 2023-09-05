@@ -1,0 +1,99 @@
+body {
+    background-color: #276baa;
+    text-align: center;
+    max-width: 1300px;
+    margin: auto;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+div#fotosResultado, img {
+    text-align: center;
+    max-width: 1300px;
+    margin: auto;
+    font-family: 'PT Sans Narrow', sans-serif;
+    border-radius: 10px;
+    size: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    margin: 10px;
+}
+
+img {
+    size: 100%;
+}
+
+img.imagem_pedra,
+img.imagem_papel,
+img.imagem_tesoura {
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+div#fotoUsuario,
+img#fotoComputador {
+    margin: 5px;
+    flex-grow: 1;
+	flex-basis: auto;
+}
+
+#ganhador {
+    font-size: 25px;
+    color: rgb(198, 219, 77);
+}
+
+#botaoJogada {
+    font-family: arial;
+    font-weight: bolder;
+    color: #fff !important;
+    font-size: 18px;
+    padding: 15px 37px;
+    border-radius: 10px;
+    border: 0.5px solid #000;
+    background-color: #329c73;
+    cursor: pointer;
+    -moz-border-radius: 10px;
+    transition: 0.5s;
+}
+
+#botaoJogada:hover {
+    color: #fff !important;
+    background-color: rgb(20, 220, 93);
+    transition: 0.5s;
+}
+#botaoResetar {
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    left: 47%;
+    color: #fff !important;
+    background-color: rgb(255, 87, 87);
+    transition: 0.5s;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    border-radius: 100%;
+    border: 1px solid #000;
+}
+#botaoResetar:hover{
+    color: #fff !important;
+    background-color: rgb(197, 30, 30);
+    transition: 0.5s;
+}
+.pontosMaquina{
+    display: flex;
+    justify-content: flex-start;
+}
+.pontosUsuario{
+    display: flex;
+    justify-content: flex-start;
+}
