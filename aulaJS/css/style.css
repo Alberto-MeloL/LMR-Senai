@@ -1,5 +1,4 @@
 body{
-    background: #276baa;
     font: normal 15pt Arial;
 }
 header{
@@ -13,10 +12,20 @@ section{
     width: 500px;
     height: 500px;
     margin: auto;
-    box-shadow: 5px 5px 10px #000;
+    box-shadow: 5px 5px 100px #000;
 }
 footer{
     color: #fff;
     text-align: center;
     font-style: italic;
+}
+div{
+    text-align: center;
+    padding: 10px;
+    width: 95%;
+}
+img{
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #ffd9aecc;
 }
