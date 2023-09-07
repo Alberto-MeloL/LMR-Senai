@@ -9,8 +9,10 @@ function verificar() {
     let sexo = window.document.getElementById("masculino, feminino");
     let idadeAtual = idade - anoAtual;
     
-    if (sexo == 'Masculino' && idadeAtual >=17) {
-
-        imagemPessoa = './img/homemCriança'
+    if (sexo == 'masculino' || sexo == 'feminino' && idadeAtual >=17) {
+resultadoVerificado.innerHTML = `Você tem ${idadeAtual} anos.(${sexo})`
+        imagemPessoa.src = './img/homemCriança'
+    }else if (sexo == 'feminino' && idadeAtual <=60) {
+        
     }
 }
