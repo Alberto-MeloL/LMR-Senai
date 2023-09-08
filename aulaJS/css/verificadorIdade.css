@@ -1,26 +1,33 @@
 body{
-    background-color: #276baa; 
-    display: flex; 
-    font: normal 20pt;
-    font-family: sans-serif;
+    font: normal 15pt Arial;
+    background-color: #000;
+}
+header{
+    color: #fff;
+    text-align: center;
 }
 section{
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px #000;
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
     width: 500px;
-    text-align: center;
-    align-items: center;
+    height: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 100px #000;
 }
 footer{
-    background-color: #fff;
-    width: 300px;
-    height: 5vh;
-    position: fixed;
-    bottom: 0;
-    right: 50%;
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+}
+div{
+    text-align: center;
+    padding: 10px;
+    width: 95%;
+}
+img{
+    width: 200px;
+    min-height: 200px;
     border-radius: 5px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+    box-shadow: 5px 5px 10px #ffd9aecc;
 }

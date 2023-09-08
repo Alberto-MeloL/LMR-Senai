@@ -47,19 +47,19 @@ function realizarJogada() {
     //Verificando se uma opção foi selecionada
 
     try {
-        
+
     } catch (error) {
-        
+
     }
     if (tesoura == false && pedra == false && papel == false) {
-    let selecionandoPorPrompt = window.prompt("Por favor selecione uma opção!\n1-Pedra 2-Papel 3-Tesoura.")
-    if (selecionandoPorPrompt == 1) {
-        pedra = true
-    }else if (selecionandoPorPrompt == 2) {
-        papel = true
-    }else{
-        tesoura = true
-    }
+        let selecionandoPorPrompt = window.prompt("Por favor selecione uma opção!\n1-Pedra 2-Papel 3-Tesoura.")
+        if (selecionandoPorPrompt == 1) {
+            pedra = true
+        } else if (selecionandoPorPrompt == 2) {
+            papel = true
+        } else {
+            tesoura = true
+        }
 
     } else {
         var resultadoSorteio = Math.floor(Math.random() * 3);
@@ -91,7 +91,7 @@ function realizarJogada() {
     if ((pedra == true && resultadoSorteio == 'tesoura') ||
         (tesoura == true && resultadoSorteio == 'papel') ||
         (papel == true && resultadoSorteio == 'pedra')) {
-        window.document.getElementById("ganhador").innerHTML = "Usuário Venceu!";
+        window.document.getElementById("ganhador").innerHTML = "Você Venceu!";
     }
     //Condições que a máquina vence
     else if ((resultadoSorteio == 'pedra' && tesoura == true) ||
@@ -100,19 +100,10 @@ function realizarJogada() {
         window.document.getElementById("ganhador").innerHTML = "Computador Venceu!";
     }
     //Se nenhum dos dois vencerem
-    else {
-        window.document.getElementById("ganhador").innerHTML = "Houve um empate!"; //<---- terminar
-    }
-    //pontos falta terminar <-----
-    let contadorPontos = 0;
-    function marcadorPontos() {
-        let pontosDaMaquina = window.document.getElementsByClassName("pontosMaquina");
-        let pontosDoUsuario = window.document.getElementsByClassName("pontosUsuario");
-        if (pontosDaMaquina == true) {
-            contadorPontos++;
-        }else if (pontosDoUsuario == true) {
-            contadorPontos++;
-        }
+    else if ((resultadoSorteio == 'pedra' && pedra == true) ||
+        (resultadoSorteio == 'tesoura' && tesoura == true) ||
+        (resultadoSorteio == 'papel' && papel == true)) {
+        window.document.getElementById("ganhador").innerHTML = "Houve um Empate"
     }
 
 }
@@ -138,4 +129,3 @@ animateText();
 function recarregarPagina() {
     window.location.reload();
 }
-
