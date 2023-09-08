@@ -7,22 +7,23 @@
     <link rel="stylesheet" href="css/calculadora.css">
 </head>
 <body>
-    <form id="perfil" class="post-form" method="post">
-<label for="arquivos">Selecione a sua foto de perfil:</label>
-<input id="arquivos" type="file" />
-<output id="resultado" />
-    </form>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+<!--Começo da section-->
+    <section>
+<div>
+<input id="inicioConta" type="number">
+<input id="finalConta" type="number">
+<input id="passo" type="number">
+<input id="calcular" type="button" value="Calcular" onclick="calculo()">
+</div>
 
-    <div class="theme-switcher-menu">
-        <button class="button action has-icon theme-switcher-menu small"
-        type="button" aria-haspopup="menu">
-        <span class="button-wrap">
-            <span class="icon icon-theme-dark "></span>
-            theme
-        </span>
-
-        </button>
-    </div>
+<!--#Resultado-->
+<div id="resultado">
+    0
+</div>
+    </section>
 </body>
 <script src="js/calculadora.js"></script>
 </html>
