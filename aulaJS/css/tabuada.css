@@ -1,0 +1,27 @@
+body{
+    background-color: rgba(0, 0, 0, 0.247);
+    border: solid;
+    border-radius: 5px;
+    width: 30%;
+
+}
+input{
+    border-radius: 5px;
+    border: none;
+}
+button{
+    color: #fff;
+   border-radius: 5px;
+   border: none;
+   background-color: rgba(141, 141, 240, 0.479);
+}
+button:hover{
+    color: #fff;
+    background-color: rgba(69, 51, 233, 0.829);
+    transition: 0.5s;
+    transform: rotateZ(400deg);
+    /*transform: translateX(20px)*/
+}
+textarea:focus, input:focus, select:focus {
+    outline: 0;
+  }
