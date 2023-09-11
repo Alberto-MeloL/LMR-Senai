@@ -19,6 +19,7 @@ function verificar() {
                 //Crinça
                 img.setAttribute('src', './img/homemCriança.jpg')
                 window.document.body.style.background = 'rgb(27, 37, 168)'
+                window.document.body.style = Selection(rgb(27, 37, 168))
             } else if (idade < 59) {
                 //Adulto
                 img.setAttribute('src', './img/homemAdulto.jpg')
