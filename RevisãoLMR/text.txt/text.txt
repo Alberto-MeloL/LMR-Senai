@@ -1,0 +1,7 @@
+container
+botstrap
+ver html css e outros
+atalho div .nomedaclass
+quando eu estour fazendo html puro eu monto minha organização
+botstrap abaixar
+=== em ja e tambem para erificr se a variavel e igual
