@@ -1,27 +1,49 @@
-body{
-    background-color: rgba(0, 0, 0, 0.247);
-    border: solid;
-    border-radius: 5px;
-    width: 30%;
+body {
+    font: normal 15pt Arial;
+    background-color: #276baa;
+}
 
-}
-input{
-    border-radius: 5px;
-    border: none;
-}
-button{
+header {
     color: #fff;
-   border-radius: 5px;
-   border: none;
-   background-color: rgba(141, 141, 240, 0.479);
+    text-align: center;
 }
-button:hover{
+
+section {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 100px #000;
+}
+
+footer {
     color: #fff;
-    background-color: rgba(69, 51, 233, 0.829);
-    transition: 0.5s;
-    transform: rotateZ(400deg);
-    /*transform: translateX(20px)*/
+    text-align: center;
+    font-style: italic;
 }
-textarea:focus, input:focus, select:focus {
+
+div {
+    text-align: center;
+    padding: 10px;
+    width: 95%;
+}
+
+#tabuada {
+    background-color: #fff;
+    color: #000;
+    border-radius: 3px;
+}
+
+#tabuada:hover {
+    background-color: #276baa;
+    color: #fff;
+    transition: 0.6s;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
     outline: 0;
-  }
+}

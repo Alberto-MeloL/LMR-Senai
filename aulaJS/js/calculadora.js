@@ -11,16 +11,22 @@ function calculo() {
     if (pontoInicial.value == 0 || pontoFinal.value == 0 || pulando.value == 0) {
         alert("Por favor, preencha todos os campos corretamente para realizar a operação.");
         return; // Sair da função se houver erros de entrada
-    }else if (pontoInicial.value > pontoFinal.value || pontoFinal.value < pontoInicial.value) {
-        alert("ERRO de lógica, preencha os dados corretamente!")
     }
-
-    // Limpando o conteúdo atual
-    exibindoResultado.innerHTML = ".";
+    
+       // Limpando o conteúdo atual
+       exibindoResultado.innerHTML = "";
 
     // Gerando a sequência de números
-    for (var i = contaInicial; i <= contaFinal; i += passo) {
-        exibindoResultado.innerHTML += i + " > ";
+    if (contaInicial <= contaFinal) {
+        for (var i = contaInicial; i <= contaFinal; i += passo) {
+            exibindoResultado.innerHTML += i + " > ";
+        }
+    } else if (contaInicial >= contaFinal) {
+        for (var j = contaInicial; j >= contaFinal; j -= passo) {
+            exibindoResultado.innerHTML += j + " > "
+
+        }
+     
     }
 }
 
@@ -60,6 +66,6 @@ function reload() {
    window.location.reload()
 }*/
 
-   
+
 
 
