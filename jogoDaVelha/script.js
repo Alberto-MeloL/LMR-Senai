@@ -1,6 +1,7 @@
 $(function () {
     var vez = 1
     var vencedor = "";
+    var casasPreenchidas = 0;
 
     function casasIguais(a, b, c) {
         var casaA = $("#casa" + a);
@@ -16,27 +17,21 @@ $(function () {
                 vencedor = "2";
             return true;
         }
-        else{
+        else {
             return false;
         }
     }
     function verificarFimDeJogo() {
-        var ganhador;
         if (casasIguais(1, 2, 3) || casasIguais(4, 5, 6) || casasIguais(7, 8, 9)/*verificações em linhas*/ ||
             casasIguais(1, 5, 9) || casasIguais(3, 5, 7)/*verificações em diagonais*/ ||
             casasIguais(1, 4, 7) || casasIguais(2, 5, 8) || casasIguais(3, 6, 9)/*verificações em colunas*/
         ) {
             $("#resultado").html("<h1>O jogador" + vencedor + "venceu! </h1>");
-            return ganhador = true
-            $(".casa").off("click");/*desativando os clicks*/
-        }else if(ganhador == false){
+            $(".casa").off("click");
+            return casasPreenchidas = 9;
+        }else if (casasPreenchidas == 9) {
             $("#resultado").html("<h1>Houve empate!</h1>")
         }
-        
-        // }else if ('click' == 9 && vencedor == "") {
-        //     $("#resultado").html("<h1>Houve empate!</h1>")
-        // }
-        
     }
 
     $(".casa").click(function () {
@@ -46,7 +41,10 @@ $(function () {
             $(this).css("background", fig);
             vez = (vez == 1 ? 2 : 1);
             verificarFimDeJogo();
+            casasPreenchidas++;
+            if (!verificarFimDeJogo()) {
+                verificarFimDeJogo();
+            }
         }
     });
 })
-

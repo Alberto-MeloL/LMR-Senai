@@ -1,0 +1,49 @@
+body {
+    font: normal 15pt Arial;
+    background-color: #276baa;
+}
+
+header {
+    color: #fff;
+    text-align: center;
+}
+
+section {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 100px #000;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+}
+
+div {
+    text-align: center;
+    padding: 10px;
+    width: 95%;
+}
+
+#numeros {
+    background-color: #fff;
+    color: #000;
+    border-radius: 3px;
+}
+
+#numeros:hover {
+    background-color: #276baa;
+    color: #fff;
+    transition: 0.6s;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+    outline: 0;
+}
