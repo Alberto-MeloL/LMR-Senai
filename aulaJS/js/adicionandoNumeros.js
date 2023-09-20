@@ -44,7 +44,7 @@ function adicionar() {
 }
 
 
-}
+
 
 
 // function exibirTexto() {
@@ -59,4 +59,3 @@ function adicionar() {
 //              alert("Número já encontrado na lista.")
 //              return
 //     
->>>>>>> 2643b0ce32eb960e29244cc7f4f3bc798d888fd7

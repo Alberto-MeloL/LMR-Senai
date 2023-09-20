@@ -8,3 +8,5 @@ function Somar() {
     result.innerHTML = `A soma é ${soma}`
     result.style.background('green')
 }
+print('a')
+//chat BOOT<==========================
