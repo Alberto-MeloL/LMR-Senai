@@ -8,19 +8,22 @@
 </head>
 <body>
     <header>
-        <h1>Tabuada</h1>
+        <h1>Adidicionando números</h1>
     </header>
     <section>
         <div>
-            <p>Digite um número de 1 a 100:<input type="number" name="numero" id="txtn"></p>
-            <input id="numeros" type="button" value="Finalizar" onclick="finalizar()">
+            <p>Digite um número de 1 a 100:<input type="number" name="numero" id="txtn" placeholder="Apenas números"></p>
+            <input id="numeros" type="button" value="Finalizar" onclick="adicionar()">
         </div>
         <div> 
-            <select name="tabuada" id="seltab" size="10">
+            <select name="números" id="seltab" size="10">
               <option value="">Ainda não há um número</option>
             </select>
            
         </div>
+        
+        <div id="resultado"></div>
+
     </section>
 </body>
 <script src="js/adicionandoNumeros.js"></script>
