@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras online</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        
+        <nav class="nav-bar">
+            <!--Menu padrao-->
+            <div class="menuPadrao">
+                <a href="index.html" class="linkMenu">Voltar ao início</a>
+                <a href="produtos.html" class="linkMenu">Produtos</a>
+                <a href="promocoes.html" class="linkMenu">Promoções</a>
+                <a href="contato.html" class="linkMenu">Contato</a>
+                <a href="filtrar.html" class="linkMenu">Filtar</a>
+            </div>
+            <!--Barra de pesquisa-->
+        <div id="divBusca">
+            <img src="img/lupaPesquisa.png" alt="Buscar..." />
+            <input type="text" id="txtBusca" placeholder="Buscar..." />
+            <button id="btnBusca" type="submit">Buscar</button>
+        </div>
+            <!--Menu Hamburguer-->
+            <div class="menuHamburguer">
+                <ul>
+                    <li><a href="produtos.html" class="linkMenu">Produtos</a></li>
+                    <li><a href="promocoes.html" class="linkMenu">Promoções</a></li>
+                    <li><a href="contato.html" class="linkMenu">Contato</a></li>
+                    <li><a href="filtar.html" class="linkMenu">Filtar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Aqui é o carousel-->
+    <input type="radio" class="slide-controller" name="slide" checked />
+    <input type="radio" class="slide-controller" name="slide" />
+    <input type="radio" class="slide-controller" name="slide" />
+    <input type="radio" class="slide-controller" name="slide" />
+
+    <div class="slide-show">
+        <ul class="slides-list">
+            <li class="slide">
+                <img src="img/lupaPesquisa.png" />
+            </li>
+            <li class="slide">
+                <img src="img/testeG2.jpg" />
+            </li>
+            <li class="slide">
+                <img src="img/testeG3.jpg" />
+            </li>
+            <li class="slide">
+                <img src="img/noite.jpg" />
+            </li>
+        </ul>
+    </div>
+
+    <div class="apresentacao">
+        <div class="ondeEntregamos">
+            <h4>Onde entregamos?</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis sapiente soluta commodi recusandae
+                voluptas itaque velit,
+                quos voluptatum perspiciatis facilis consectetur doloribus,<br> possimus nisi dicta quaerat voluptates
+                quis
+                neque excepturi.</p>
+        </div>
+        <div class="formaDePagamento">
+            <h4>Formas de pagamento?</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis sapiente soluta commodi recusandae
+                voluptas itaque velit,
+                quos voluptatum perspiciatis facilis consectetur doloribus,<br> possimus nisi dicta quaerat voluptates
+                quis
+                neque excepturi.</p>
+        </div>
+        <div class="situacoesDeConflito">
+            <h4>Situações incovenientes?</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis sapiente soluta commodi recusandae
+                voluptas itaque velit,
+                quos voluptatum perspiciatis facilis consectetur doloribus,<br> possimus nisi dicta quaerat voluptates
+                quis
+                neque excepturi.</p>
+        </div>
+    </div>
+    <!--footer redes sociais-->
+    <footer>
+        <a href=""><img src="img/socialMedia.jpg" alt="Rede social Instagram"></a>
+    </footer>
+</body>
+<script src="js/main.js"></script>
+
+</html>

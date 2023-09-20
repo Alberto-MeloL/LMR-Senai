@@ -1,5 +1,6 @@
 body{
     font: normal 15pt Arial;
+    background-color: #000;
 }
 header{
     color: #fff;
@@ -25,7 +26,18 @@ div{
     width: 95%;
 }
 img{
-    width: 400px;
+    width: 200px;
+    min-height: 200px;
     border-radius: 5px;
     box-shadow: 5px 5px 10px #ffd9aecc;
 }
+::selection {
+    background-color: #11d3723a; /* Cor de fundo selecionada */
+    color: #000; /* Cor do texto selecionado */
+}
+
+::-moz-selection {
+    background-color: #ffcc00; /* Cor de fundo selecionada no Firefox */
+    color: #000; /* Cor do texto selecionado no Firefox */
+}
+

@@ -1,5 +1,7 @@
 body{
     font: normal 15pt Arial;
+    background-color: #000;
+    
 }
 header{
     color: #fff;
@@ -25,7 +27,27 @@ div{
     width: 95%;
 }
 img{
-    width: 400px;
+    width: 200px;
+    min-height: 200px;
     border-radius: 5px;
     box-shadow: 5px 5px 10px #ffd9aecc;
+}
+#resetar{
+    background-color: rgb(168, 77, 77);
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    /*flood-color: #000;*/
+}
+#resetar:hover{
+background-color: #ff0606;
+color: #fff;
+transition: 0.8s;
+transform: translateX(5px);
+}
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }

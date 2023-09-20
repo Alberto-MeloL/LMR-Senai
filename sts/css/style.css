@@ -1,0 +1,232 @@
+body {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: #fff;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(70, 114, 70, 0.747);
+  box-shadow: 5px 5px 10px #00000057;
+}
+
+.nav-bar {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menuHamburguer {
+  display: none;
+}
+
+.menuPadrao {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5%;
+}
+
+#buscarProdutos-form {
+  min-height: 1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 7%;
+}
+
+.linkMenu {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+  font-size: 1vw;
+}
+
+.linkMenu:hover {
+  background-color: #517540;
+  transition: 0.7s;
+  border-radius: 10px;
+  transform: rotateX(400deg);
+}
+
+#divBusca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E0EEEE;
+  border: solid 2px #5F9EA0;
+  border-radius: 10px;
+  width: 300px;
+  height: 32px;
+  align-items: center;
+}
+
+#txtBusca {
+  float: left;
+  background-color: transparent;
+  padding-left: 5px;
+  font-size: 18px;
+  border: none;
+  height: 32px;
+  width: 191px;
+}
+
+#btnBusca {
+  border: none;
+  float: left;
+  height: 32px;
+  border-radius: 0 7px 7px 0;
+  width: 70px;
+  font-weight: bold;
+  background: #5F9EA0;
+  cursor: pointer;
+}
+
+#divBusca img {
+  float: left;
+  height: 32px;
+  border-radius: 10px;
+}
+.slide-controller:nth-child(1):checked~.slide-show .slides-list {
+  --selected-item: 0;
+}
+
+.slide-controller:nth-child(2):checked~.slide-show .slides-list {
+  --selected-item: 1;
+}
+
+.slide-controller:nth-child(3):checked~.slide-show .slides-list {
+  --selected-item: 2;
+}
+
+.slide-controller:nth-child(4):checked~.slide-show .slides-list {
+  --selected-item: 3;
+}
+
+.slide-show {
+  overflow: hidden;
+}
+
+.slides-list {
+  --selected-item: 0;
+  --total-items: 4;
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 0;
+  position: relative;
+  left: calc(var(--selected-item) * -100%);
+  width: calc(var(--total-items) * 100%);
+  transition: left 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+.apresentacao {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.ondeEntregamos {
+  font-size: 15px;
+  border-style: solid 1px;
+  box-shadow: 5px 5px 100px #00000083;
+  background-color: #7bb460;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.formaDePagamento {
+  font-size: 15px;
+  border-style: solid 1px;
+  box-shadow: 5px 5px 100px #00000083;
+  background-color: #7bb460;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.apresentacao h4 {
+  background-color: #ffffff59;
+}
+
+.situacoesDeConflito {
+  font-size: 15px;
+  border-style: solid 1px;
+  box-shadow: 5px 5px 100px #00000083;
+  background-color: #7bb460;
+  border-radius: 5px;
+  width: 200px;
+}
+
+footer {
+  width: 100%;
+  min-height: 10vh;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(70, 114, 70, 0.747);
+}
+
+footer img {
+  width: 3.5%;
+  border-radius: 5px;
+  align-items: center;
+  margin-top: 1%;
+}
+
+.container-produtos {
+  min-height: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  margin-top: 10px;
+}
+
+.produtos-nav-bar {
+  display: flex;
+  flex-direction: column;
+}
+
+.produtos-nav-bar-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.produtos-nav-bar-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.produtos-nav-bar-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.produtos-nav-bar-5 {
+  display: flex;
+  flex-direction: column;
+}
+
+/* input {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+} */
+textarea:focus, input:focus, select:focus {
+  outline: 0;
+}
