@@ -48,3 +48,6 @@ $(function () {
         }
     });
 })
+function name(params) {
+    //calculaora de dolar automatica
+}
