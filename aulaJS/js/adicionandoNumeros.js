@@ -26,7 +26,7 @@ function adicionar() {
                 soma += Number(tab.options[i].value)
             }
 
-            var maiorValor = Math.max(...numeroNaLista.map(Number, n));//encontrando o maior valor
+            var maiorValor = Math.max(...numeroNaLista, n);//encontrando o maior valor
             numbersInput.value = ''//limpando a caixa de texto
 
             //exibindo resultados
