@@ -10,36 +10,37 @@ function adicionar() {
     } else if (n < 1 || n > 100) {
         alert("Por favor insira um número entre 1 e 100.")
     } else {
-// verificar se o número já existe
-var numeroNaLista = Array.from(tab.options).map(option => Number(option.value));
-if (numeroNaLista.includes(n)) {
-    alert("Número já encontrado na lista.") 
-}else{
-        //adicionando os números ao elemento 'seltab'
-        //criando um novo elemento
-        let option = window.document.createElement('option')
-        option.value = n
-        option.text = n
-        tab.appendChild(option)
+        // verificar se o número já existe
+        var numeroNaLista = Array.from(tab.options).map(option => Number(option.value));
+        if (numeroNaLista.includes(n)) {
+            alert("Número já encontrado na lista.")
+        } else {
 
-//claculando a soma dos valores
-var soma = 0;
-for (let i = 0; i < tab.options.length; i++) {
-    soma += Number(tab.options[i].value)
-    
-}
+            let option = window.document.createElement('option')//criando um novo elemento
+            option.value = n
+            option.text = n
+            tab.appendChild(option) //adicionando os números ao elemento 'seltab'
 
-        //limpando a caixa de texto
-        numbersInput.value = ''
+            var soma = 0;//claculando a soma dos valores
+            for (let i = 0; i < tab.options.length; i++) {
+                soma += Number(tab.options[i].value)
+            }
+
+            var maiorValor = Math.max(...numeroNaLista.map(Number, n));//encontrando o maior valor
+            numbersInput.value = ''//limpando a caixa de texto
+
+            //exibindo resultados
+
+
+            resultado.innerHTML = `Ao todo, temos ${numeroNaLista.length} cadastrados`
+            resultado.innerHTML += `<br>O maior valor foi ${maiorValor} `
+            resultado.innerHTML += `<br>A soma total é ${soma}`
+
+        }
+
+
     }
-}
-//exibindo resultados
-let exibirTamanhho = numeroNaLista.length //exibindo o seu tamanho
-let maiorValor = Math.max(...numeroNaLista)//o operador spread('...') é usado para desestruturar o array
-//e passar seus elementos como argumentos separados para o Math.max()
- resultado.innerHTML = `Ao todo, temos ${numeroNaLista.length} cadastrados`
- resultado.innerHTML = `O maior valor foi ${maiorValor}`
- resultado.innerHTML = `A soma total é ${soma}`
+
 }
 
 
