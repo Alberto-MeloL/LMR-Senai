@@ -1,0 +1,151 @@
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    background-color: rgb(215, 184, 231);
+    font-family: sans-serif, serif, Arial;
+    font-size: 20px;
+}
+
+textarea:focus,
+/*removendo o foco das input*/
+input:focus,
+select:focus {
+    outline: 0;
+}
+
+#nav-bar {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+}
+
+
+.linkMenu {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.658);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.linkMenu:hover {
+    color: #13111194;
+    transition: 0.5s;
+    transform: rotateY(20deg);
+}
+
+.fundo {
+    margin-top: 20%;
+    width: 100%;
+
+}
+
+.produtos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    height: 30vh;
+    background: #fff;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 2px 2px 40px #000;
+}
+
+p {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    margin: 0;
+    bottom: 1;
+    color: #000;
+}
+
+img {
+    height: 19vh;
+    width: 150px;
+}
+.menu-toggle {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+/* Adicione um estilo para animar a transformação do botão */
+.menu-open .bar:nth-child(1) {
+    transform: translateY(8px) rotate(-40deg);
+}
+.menu-open .bar:nth-child(2) {
+    opacity: 0; /* a linha do meio some*/
+}
+.menu-open .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(40deg);
+}
+@media screen and (max-width: 768px) {
+    .linkMenu {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .linkMenu {
+        display: none;
+    }
+    ul, li{
+        display: none;
+    }
+       
+    
+}
+
+
+footer {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 30vh;
+    background-color: #fff;
+}
+@media screen and (width:1024px) {
+    img{
+        height: 14vh;
+        width: 100px;
+    }
+}
+@media screen and (width:232px) {
+    img{
+        display: flex;
+        flex-direction: column;
+        height: 5vh;
+        width: 50px;
+    }
+    .produtos{
+        height: 70vh;
+    }
+}
+@media screen and (height:1000px) {
+    img{
+        display: flex;
+        flex-direction: column;
+    }
+}
