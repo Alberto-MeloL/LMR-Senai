@@ -8,11 +8,45 @@ body {
     font-size: 20px;
 }
 
-textarea:focus,
 /*removendo o foco das input*/
+textarea:focus,
 input:focus,
 select:focus {
     outline: 0;
+}
+
+/*esta é a estilização do cadastro/login*/
+.FundoCadastro {
+    width: 100vw;
+    height: 100vh;
+    background: #6C7A89;
+    ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.cadastro{
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 3px;
+}
+
+.fundoCadastro {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-items: center;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.24);
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
 }
 
 #nav-bar {
@@ -42,12 +76,6 @@ header {
     transform: rotateY(20deg);
 }
 
-.fundo {
-    margin-top: 20%;
-    width: 100%;
-
-}
-
 .produtos {
     display: flex;
     justify-content: space-around;
@@ -73,6 +101,7 @@ img {
     height: 19vh;
     width: 150px;
 }
+
 .menu-toggle {
     display: flex;
     justify-content: flex-end;
@@ -93,28 +122,15 @@ img {
 .menu-open .bar:nth-child(1) {
     transform: translateY(8px) rotate(-40deg);
 }
+
 .menu-open .bar:nth-child(2) {
-    opacity: 0; /* a linha do meio some*/
+    opacity: 0;
+    /* a linha do meio some*/
 }
+
 .menu-open .bar:nth-child(3) {
     transform: translateY(-9px) rotate(40deg);
 }
-@media screen and (max-width: 768px) {
-    .linkMenu {
-        font-size: 16px;
-    }
-}
-@media screen and (max-width: 768px) {
-    .linkMenu {
-        display: none;
-    }
-    ul, li{
-        display: none;
-    }
-       
-    
-}
-
 
 footer {
     display: flex;
@@ -126,25 +142,46 @@ footer {
     height: 30vh;
     background-color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+    .linkMenu {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .linkMenu {
+        display: none;
+    }
+
+    ul,
+    li {
+        display: none;
+    }
+}
+
 @media screen and (width:1024px) {
-    img{
+    img {
         height: 14vh;
         width: 100px;
     }
 }
+
 @media screen and (width:232px) {
-    img{
+    img {
         display: flex;
         flex-direction: column;
         height: 5vh;
         width: 50px;
     }
-    .produtos{
+
+    .produtos {
         height: 70vh;
     }
 }
+
 @media screen and (height:1000px) {
-    img{
+    img {
         display: flex;
         flex-direction: column;
     }
