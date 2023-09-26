@@ -10,17 +10,20 @@
     <nav id="nav-bar">
         <header>
             <!-- este e o menu em telas maiores  -->
+            <a href="index.html" class="linkMenu">Voltar ao início</a>
             <a href="" class="linkMenu">Deletar conta</a>
         </header>
 
      <form method="post" action="cadastro.php">
         <label>Login:</label><input type="text" name="login" id="login"><br>
         <label>Senha:</label><input type="password" name="senha" id="senha"><br>
-        <input type="submit" value="Cadastrar" name="cadastrar" id="cadastrar">
-        <div class="cadastre-se">
-            <label>Email:</label>
-            <label>Senha:</label>
-            <label>Confirmar Senha:</label>
+        <input type="submit" value="Login" name="login" id="login">
+        <input type="button" value="Cadastrar-me" onclick="mudarDiv('cadastrar-me')">
+        <div class="cadastrar-me" id="cadastrar-me">
+            <label>Email:</label><input type="email" name="email" id="email">
+            <label>Senha:</label><input type="password" name="password" id="password">
+            <label>Confirmar Senha:</label><input type="password" name="passwordConfirm" id="passwordConfirm">
+            <input type="submit" id="enviarCadastro" id="enviarCadastro">
         </div>
      </form>
 </nav>
@@ -29,8 +32,7 @@
             <div class="meuGitHub">
                 <a href="https://github.com/Alberto-MeloL" class="linkMenu">Meu GitHub</a>
             </div>
-        </footer>
-    
+        </footer> 
     </body>
     <script src="js/main.js"></script>
     
