@@ -14,13 +14,16 @@ input:focus,
 select:focus {
     outline: 0;
 }
-
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
 /*esta é a estilização do cadastro/login*/
 .FundoCadastro {
     width: 100vw;
     height: 100vh;
     background: #6C7A89;
-    ;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -130,6 +133,25 @@ img {
 
 .menu-open .bar:nth-child(3) {
     transform: translateY(-9px) rotate(40deg);
+}
+.form{
+    display: flex;
+    justify-items: center;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.24);
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+}
+#formAutorizacao{
+    width: 50vw;
+    height: 9vh;
+    background: #6C7A89;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
 }
 
 footer {
