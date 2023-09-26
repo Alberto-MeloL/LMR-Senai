@@ -14,10 +14,13 @@ input:focus,
 select:focus {
     outline: 0;
 }
+/*as inputs estão estilizados de forma global, por isso não tem nenhum nome específico Ex(id, nome)*/
+
 input{
     border-top: none;
     border-left: none;
     border-right: none;
+    border-radius: 3px;
 }
 /*esta é a estilização do cadastro/login*/
 .FundoCadastro {
@@ -134,24 +137,36 @@ img {
 .menu-open .bar:nth-child(3) {
     transform: translateY(-9px) rotate(40deg);
 }
-.form{
+/*deta linha ate a linha 156 é estilização da página "Silicitar autorizações"*/
+#motivo{
     display: flex;
-    justify-items: center;
-    width: 500px;
-    height: 500px;
-    background-color: rgba(0, 0, 0, 0.24);
-    border-radius: 3px;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.form{
+
 }
 #formAutorizacao{
-    width: 50vw;
-    height: 9vh;
-    background: #6C7A89;
+    width: 100%;
+    height: 50vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center; 
+}
+#mtv{
+   
+}
+select{
+    height: 100px;
+}
+#enviarForm{
+    background-color: rgba(0, 0, 0, 0.185);
+    color: #030303;
+    border: none;
+    cursor: pointer;
 }
 
 footer {

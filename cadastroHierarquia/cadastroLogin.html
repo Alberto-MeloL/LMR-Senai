@@ -13,16 +13,11 @@
             <a href="" class="linkMenu">Deletar conta</a>
         </header>
 
-        <div class="fundoCadastro">
-        <div class="cadastro">
-            <label for="nomeDecadastro">Nome:</label>
-            <input type="text" name="nome" id="nomeCadastro">
-            <label for="emailCadastro">Email:</label>
-            <input type="email" name="email" id="emailCadastro">
-            <label for="senhaCadastro">Senha:</label>
-            <input type="password" name="senha" id="senhaCadastro">
-        </div>
-    </div>
+     <form method="post" action="cadastro.php">
+        <label>Login:</label><input type="text" name="login" id="login"><br>
+        <label>Senha:</label><input type="password" name="senha" id="senha"><br>
+        <input type="submit" value="Cadastrar" name="cadastrar" id="cadastrar">
+     </form>
 </nav>
         <footer>
             <!-- link do github -->

@@ -23,6 +23,6 @@ if (nome.value.length == 0) {
 }//vericando se os campos estao preenchidos corretamente
 else if (nome.value.length == Number) {
     alert('O campo "nome" não pode conter números!')
-}else if (email.value. == -1'@' ) {
+}else if (e) {
     
 }
