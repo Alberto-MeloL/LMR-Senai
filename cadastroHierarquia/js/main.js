@@ -26,3 +26,16 @@ else if (nome.value.length == Number) {
 }else if (e) {
     
 }
+
+//função para esconder a página cadastre-se
+function mudarDiv(mdDiv) {
+    var display = window.document.getElementById(mdDiv).style.display;
+    if (display == "none") {
+        window.document.getElementById(mdDiv).style.display = 'block';
+    }else{
+        window.document.getElementById(mdDiv).style.display = 'none';
+    }
+}
+
+
+/*https://encurtador.com.br*/
