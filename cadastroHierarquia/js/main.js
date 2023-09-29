@@ -1,41 +1,49 @@
-const menuToggle = document.querySelector(".menu-toggle");
-const navBar = document.querySelector("#nav-bar");
 
-menuToggle.addEventListener("click", () => {
-    navBar.classList.toggle("menu-open");
-});
+//validações do formuarios de solicitações
+var opcoes = window.document.getElementsByClassName("opcoesForm");
+var motivo = window.document.querySelector("#mtv");
 
-var opcoes = window.document.getElementsByClassName(opcoesForm);
-var motivo = window.document.querySelector(mtv);
-var nome = window.document.querySelector(nomeCadastro);
-var email = window.document.querySelector(emailCadastro);
-var senha = window.document.querySelector(senhaCadastro);
 
-//validações de cadastro e login
+//validações de login
+var email = window.document.querySelector("#email");
+var senha = window.document.querySelector("#senha");
 
-//Verificando se há campos vazios
-if (nome.value.length == 0) {
-    alert('Por favor preencha o campo "nome"')
-}else if (email.value.length == 0) {
-    alert('Por favor preencha o campo "email"')
-}else if (senha.value.length == 0) {
-    alert('Por favor preencha o campo "senha"')
-}//vericando se os campos estao preenchidos corretamente
-else if (nome.value.length == Number) {
-    alert('O campo "nome" não pode conter números!')
-}else if (e) {
-    
+//verificando se os campos foram preenchidos corretamente
+
+if (senha.value.length === 0 || senha.value.length === null) {
+    alert('Por favor preencha o campo senha corretamente!')
 }
 
-//função para esconder a página cadastre-se
+
+//validações de cadastro
+var nome = window.document.querySelector("#nomeCadastro");
+
+
+// função para esconder a div de cadastro
 function mudarDiv(mdDiv) {
-    var display = window.document.getElementById(mdDiv).style.display;
-    if (display == "none") {
-        window.document.getElementById(mdDiv).style.display = 'block';
-    }else{
-        window.document.getElementById(mdDiv).style.display = 'none';
+    var divCadastro = document.getElementById(mdDiv);
+    var display = divCadastro.style.display;
+
+    if (display === "none" || display === "") {
+        divCadastro.style.display = 'block';
+        cadastrarMeButton.value = "Voltar";
+    } else {
+        divCadastro.style.display = 'none';
+        cadastrarMeButton.value = "Cadastrar-me";
     }
 }
+
+// Adicione um ouvinte de evento ao botão "Cadastrar-me"
+document.addEventListener("DOMContentLoaded", function () {
+    var cadastrarMeButton = document.getElementById("cadastrar-me-button");
+
+    if (cadastrarMeButton) {
+        cadastrarMeButton.addEventListener("click", function () {
+            mudarDiv("cadastrar-me");
+        });
+    }
+});
+
 
 
 /*https://encurtador.com.br*/
