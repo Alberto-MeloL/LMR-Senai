@@ -1,25 +1,31 @@
-body {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    background-color: #d7b8e7;
-    font-family: sans-serif, serif, Arial;
-    font-size: 20px;
-}
-
 /*variaveis de cor*/
 :root{
     --color-white : #fff;
-    
+    --color-pink: #d7b8e7;
     --color-red: #e63636;
     --color-dark1: #181818;
     --color-dark2: #1e1e1e;
     --color-purple1: #9333FF;
     --color-purple2: indigo;
 }
-
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-pink);
+    font-family: sans-serif, serif, Arial;
+    font-size: 20px;
+}
+.content{
+    background-color: var(--color-dark1); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+}
 /*removendo o foco das input*/
 textarea:focus,
 input:focus,
