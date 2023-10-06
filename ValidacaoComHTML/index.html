@@ -10,7 +10,7 @@
 
     <form method="post" action="" name="dados">//facilita colocando nome
         <label for="nome">Nome: </label>
-        <input id="nome" type=text required name=nome x-moz-errormessage="erro" />
+        <input id="nome" type=text required name="nome" x-moz-errormessage="erro" />
         <br />
         <label for="email">Email: </label>
         <input id="email" type=text required name=email />
@@ -21,6 +21,6 @@
         var campo1 = document.getElementById('nome');
         //Seleciona o campo com a ID "nome"
         campo1.setCustomValidity('Preencha este campo corretamente.');
-        //uso setCustomValidity para trocar a mensagem de erro dele.
+        //uso setCustomValidity para trocar a mensagem de erro dele.Mudar cor da borda.
     </script>
 </body>

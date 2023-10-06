@@ -11,39 +11,38 @@
 <body>
     <nav id="nav-bar">
         <header>
-            <!-- este e o menu em telas maiores  -->
             <a href="index.html" class="linkMenu">Voltar ao início</a>
             <a href="cadastroLogin.html" class="linkMenu">Cadastro/Login</a>
         </header>
-<form id="formAutorizacao" action="solicitarAutorizacao.html">
-    <div class="form">
-        <select name="opcoes" class="opcoesForm">
-            <option  value="">...</option>
-            <option  value="opcao1" value="">Autorização para deletar contas</option>
-            <option  value="opcao2" value="">Autorização para editar livros</option>
-            <option  value="opcao3" value="">Autorização para editar produtos</option>
-            <option  value="opcao4" value="">Autorização para adicionar produtos</option>
-            <option  value="opcao5" value="">Autorização para adicionar livros</option>
-        </select>
-        <div class="explicacao" id="motivo">
-            <textarea name="" id="mtv" cols="30" rows="10"></textarea> 
-            <input type="submit" id="enviarForm">
-        </div>
-    </div>
-</form>
-       
+        <form id="formAutorizacao" action="solicitarAutorizacao.html">
+            <div class="form">
+                <select name="opcoes" class="opcoesForm">
+                    <option value="">...</option>
+                    <option value="opcao1" value="">Autorização para deletar contas</option>
+                    <option value="opcao2" value="">Autorização para editar livros</option>
+                    <option value="opcao3" value="">Autorização para editar produtos</option>
+                    <option value="opcao4" value="">Autorização para adicionar produtos</option>
+                    <option value="opcao5" value="">Autorização para adicionar livros</option>
+                </select>
+                <div class="explicacao" id="motivo">
+                    <textarea name="" id="mtv" cols="30" rows="10" placeholder="Qual o motivo?"></textarea>
+                    <input type="submit" id="enviarForm">
+                </div>
+            </div>
+        </form>
+
         <footer>
             <!-- link do github -->
             <div class="meuGitHub">
                 <a href="https://github.com/Alberto-MeloL" class="linkMenu">Meu GitHub</a>
             </div>
         </footer>
-    
-    </body>
-    <script src="js/main.js"></script>
-    
-    </html>
 
-    <!--  <input type="const name = (params) => {
+</body>
+<script src="js/main.js"></script>
+
+</html>
+
+<!--  <input type="const name = (params) => {
             
         }" name="" id=""> -->
