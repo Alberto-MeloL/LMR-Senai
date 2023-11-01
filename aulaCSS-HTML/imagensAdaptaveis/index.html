@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Adaptáveis</title>
+</head>
+<body>
+    
+    <h1>Aumente/Dimunua</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/M.png" type="image/png">
+        <img src="img/G.png" alt="Imagem Flexível">  <!--Base imagem padrão, acima dela os source se não, não funcionará-->
+    </picture>
+</body>
+</html>
