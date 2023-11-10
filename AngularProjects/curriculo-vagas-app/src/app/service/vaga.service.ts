@@ -1,9 +1,10 @@
+//O que esta dentro de servece não é componente (ng g c s)
+//Dentro de um componente de um componente tem (html, css, ts, spec)
 // Importa os módulos necessários
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Vaga } from '../models/curriculo.model';
-
+import { Vaga } from '../models/vaga.model';
 @Injectable({
 providedIn: 'root',
 })

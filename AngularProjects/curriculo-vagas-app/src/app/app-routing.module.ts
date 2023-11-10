@@ -6,11 +6,11 @@ import { VagasComponent } from './view/vagas/vagas.component';
 import { PainelVagasComponent } from './view/painel-vagas/painel-vagas.component';
 
 const routes: Routes = [
-  {path: 'curriculos', component: CurriculosComponent},
-  {path: 'inicio', component: InicioComponent},
-  {path: 'painel-vagas', component: PainelVagasComponent},
-  {path: 'vagas', component: VagasComponent}
-];
+  { path: '', component: InicioComponent }, // Rota para a página inicial
+  { path: 'curriculos', component: CurriculosComponent }, // Rota para currículos
+  { path: 'vagas', component: VagasComponent }, // Rota para vagas
+  {path: 'painel-vagas', component: PainelVagasComponent}
+  ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

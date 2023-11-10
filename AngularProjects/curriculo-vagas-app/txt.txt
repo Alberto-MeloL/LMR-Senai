@@ -1,0 +1,3 @@
+se nao for admnistrador da maquina tem que usar npx
+/*dizendo para quando digitar ng ja estartar com npx*/no escript dentro de packge.json
+.t

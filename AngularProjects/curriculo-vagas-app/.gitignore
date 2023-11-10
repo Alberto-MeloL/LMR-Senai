@@ -1,5 +1,5 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
-
+#serve para subir apenas os arquivos que foram alterados, para puxar novamente e preciso instalar as dependencias(cria um arquivo com o  mesmo nove instala o angular, e da git pull ou clone
 # Compiled output
 /dist
 /tmp
