@@ -13,5 +13,16 @@
         <source media="(max-width: 1050px)" srcset="img/M.png" type="image/png">
         <img src="img/G.png" alt="Imagem Flexível">  <!--Base imagem padrão, acima dela os source se não, não funcionará-->
     </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <audio src="" controls></audio>
+    <!-- controls(menu de audio), autoplay para reproduzir automaticamente, preload(aoto, não e recomendavel) loop(fica repetindo)-->
+
+    <audio preload="metadata" autoplay controls loop>
+        <source src="media/audio-aqui" type="audio/tipo do audio">
+        <source src="media/audio-aqui" type="audio/tipo do audio">
+        <source src="media/audio-aqui" type="audio/tipo do audio">
+        <p>Infelizmente não foi possível reproduzir o audio <a href="midia/audio-aqui">Clique aqui para baixa-lo</a></p>
+    </audio>
 </body>
 </html>
