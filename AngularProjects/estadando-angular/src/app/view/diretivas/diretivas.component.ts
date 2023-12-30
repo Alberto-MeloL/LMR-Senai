@@ -11,4 +11,9 @@ export class DiretivasComponent {
 verificarAtivo():boolean{
  return this.ativo
 }
+
+//um array de classe, posso fazer testes para adicionar uma lista específica.Se tiver duas classes, no css ele ira pegar o estilos da primeira que aparecer
+classes = ['teste01', 'teste02']
+underline = 'teste03'
+//as diretivas são ngAlgumaCoisaa
 }

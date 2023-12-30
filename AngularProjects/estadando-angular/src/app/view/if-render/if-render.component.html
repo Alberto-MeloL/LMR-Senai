@@ -1,0 +1,9 @@
+<div class="class">
+    <div *ngIf="podeMostrar">Estamos mostrando porque foi permitidos</div>
+    <h2 *ngIf="nome === 'Alberto'; else nomeNaoEncontrado">Meu nome é {{nome}}</h2>
+    <ng-template #nomeNaoEncontrado>
+<!-- dito o else aqui -->
+<h1>Nome <q>{{nome}}</q> não encontrado!</h1>
+    </ng-template>
+    <!-- o nome do else não pode começar com símbolos -->
+</div>
