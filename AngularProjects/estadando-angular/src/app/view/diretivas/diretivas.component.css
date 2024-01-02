@@ -1,3 +1,4 @@
+
 .teste02{
     color: blue;
 }
@@ -6,4 +7,19 @@
 }
 .teste03{
     color: rgb(0, 165, 0);
+}
+.carregando{
+    width: 60px;
+    height: 80px;
+    border: 10px solid #000000;
+    border-top:  10px transparent;
+    border-radius: 100%;
+    animation: carregando .8s infinite linear;
+}
+
+@keyframes carregando {
+    100%{
+        transform: rotate(360deg) ;
+    }
+    
 }

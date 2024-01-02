@@ -1,0 +1,22 @@
+<div class="class" >
+  <h1>Animais</h1>
+  <ul>
+    <li *ngFor="let animal of animais" class="animal-item">
+      <p>Nomne:</p>
+      {{ animal.name }}
+      <!--como usar um replace-->
+      <p>Raça:</p>
+      {{ animal.type }}
+
+      <button (click)="verIdade(animal)">Ver idade</button>
+    </li>
+    <li *ngIf="compras"> <!--Garante que não seja indefinida-->
+        <p>Nome:</p>
+    {{compras.name}}
+    <p>Tipo:</p>
+    {{compras.type}}
+    </li>
+
+    <h1 [ngClass]="detalhesAnimalStyle">{{detalhesAnimal}}</h1>
+  </ul>
+</div>

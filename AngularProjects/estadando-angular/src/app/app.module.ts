@@ -7,6 +7,10 @@ import { Componente1Component } from './view/componente-1/componente-1.component
 import { Componente2Component } from './view/componente-2/componente-2.component';
 import { DiretivasComponent } from './view/diretivas/diretivas.component';
 import { IfRenderComponent } from './view/if-render/if-render.component';
+import { EventosComponent } from './view/eventos/eventos.component';
+import { EmitterComponent } from './view/emitter/emitter.component';
+import { ChangeNumberComponent } from './view/change-number/change-number.component';
+import { ListRenderComponent } from './view/list-render/list-render.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,11 @@ import { IfRenderComponent } from './view/if-render/if-render.component';
     Componente1Component,
     Componente2Component,
     DiretivasComponent,
-    IfRenderComponent
+    IfRenderComponent,
+    EventosComponent,
+    EmitterComponent,
+    ChangeNumberComponent,
+    ListRenderComponent
   ],
   imports: [
     BrowserModule,
