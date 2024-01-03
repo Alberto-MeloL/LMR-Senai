@@ -34,7 +34,7 @@ export class ListRenderComponent implements OnInit {
 detalhesAnimal: string = ''
 detalhesAnimalStyle: any = {}
 
-  verIdade(animal: Animal){//alinhado com a minha interface
+  verIdade(animal: Animal): void{//alinhado com a minha interface
 this.detalhesAnimal = `A(o) ${animal.name} tem ${animal.age} anos`
 
   }

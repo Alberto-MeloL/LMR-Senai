@@ -5,7 +5,9 @@
   transition: 3s;
 }
 /*estilos globais*/
-
+body{
+  margin-bottom: 500px;
+}
 .class{
   margin-bottom: 2px solid #000000;
   border-bottom: 2px solid #008b8b;
