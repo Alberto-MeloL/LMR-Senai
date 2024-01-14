@@ -1,0 +1,23 @@
+:root{
+    --corPretaPadrao: #000000;
+    --corPretaFosca: #1E1F0B;
+    --corAmarela: #FFF72D;
+    --corVerdeEscura: #16AC25;
+    --corVerdeMedia: #67BD3F;
+    --corVerdeClaro: #A2F385;
+    --corVermelhaClara: #AC1616;
+    --corVermelhaEscura: #FF0000;
+    --corCinza: #808080;
+    --corCinzaClara: #D9D9D9;
+    --corBrancaPadrao: #FFFFFF;
+    --fontGlobal: 'Helvetica', "Courier New", 'Calibri';
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fontGlobal);
+}
+ul, li{
+    list-style: none;
+}
+/*As aspas são usadas para indicar que a fonte é uma unidade única e não deve ser  interpretada separadamente se contiver espaços, e prática comum incluí-las para garantir consistência, fontes única aspas são opcionais*/
